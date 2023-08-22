@@ -1,7 +1,6 @@
 # JAVASCRIPT4 😊✨
 
-![Uploading image.png…]()
-
+![JavaScript-Symbol](https://github.com/Barby202022/JAVASCRIPT4/assets/107775367/52879181-4a9e-4614-b05e-1395ce0c78f3)
 
 MISSION#1
 
