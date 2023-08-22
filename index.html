@@ -1,52 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CODO A CODO NODEJS</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header>
-
-        </header>
-        <main>
-
-            <h1>
-                TTULO GRANDE
-            </h1>
-            <h2>
-                SUBTITULOS 
-            </h2>
-
-            <div class="container">
-            CLASE DE JS NODE 
-                </div >
-            <div>
-            <h1>Hola!</h1>
-            Terminando 
-            </div>
-                <div>kakakskasa
-
-                </div>
-        <br>    
-        <!-- link,(esto es un comentario)-->
-        <a href="https://www.google.com" target="_blank">
-        Hola!!
-        </a>
-        <img src="https://cdn2.hubspot.net/hubfs/53/como-hacer-una-pagina-web-en-html.jpg" alt="FOTO DE CODIGO">
-        <p class="parrafo_background">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, maiores pariatur provident corporis odit, ex blanditiis dolorem at aliquam doloremque repellendus inventore maxime quis. Repellendus hic consectetur ex quibusdam tempora?
-        </p>
-        
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, eaque repellendus alias similique tempore deserunt saepe sapiente sequi, unde atque ea! Eveniet velit odit at omnis quo corporis unde libero!
-        </p>
-    </main>
-    <footer>
-
-    </footer>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    </body>
+    <section id="inicio">
+        <h1>Bienvenido a Nuestra Tienda en Línea</h1>
+        <p>Explora nuestros productos y encuentra las mejores ofertas.</p>
+        <a href="#tienda">Ver la tienda</a>
+    </section>
+    
+    <section id="tienda">
+        <h2>Productos Disponibles</h2>
+        <div class="producto">
+            <img src="producto1.jpg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Precio: $50</p>
+            <a href="#item1">Ver detalles</a>
+        </div>
+        <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Precio: $75</p>
+            <a href="#item2">Ver detalles</a>
+        </div>
+        <!-- Más productos... -->
+    </section>
+    
+    <section id="item1">
+        <h2>Detalles del Producto 1</h2>
+        <img src="producto1.jpg" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p>Precio: $50</p>
+        <p>Descripción detallada del producto.</p>
+        <button>Agregar al Carrito</button>
+    </section>
+    
+    <section id="item2">
+        <h2>Detalles del Producto 2</h2>
+        <img src="producto2.jpg" alt="Producto 2">
+        <h3>Producto 2</h3>
+        <p>Precio: $75</p>
+        <p>Descripción detallada del producto.</p>
+        <button>Agregar al Carrito</button>
+    </section>
+    
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul>
+            <li>Producto 1 - $50</li>
+            <li>Producto 2 - $75</li>
+        </ul>
+        <p>Total: $125</p>
+        <button>Realizar Pedido</button>
+    </section>
+    
+    <footer>
+        <p>Derechos de autor © 2023 | Tienda en Línea</p>
+    </footer>
+</body>
 </html>
