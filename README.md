@@ -17,3 +17,7 @@ Finalizado: Challenge integrador - MISSION #1 -
 Contenido multimedia para el challengeArchivo
 Finalizado: Contenido multimedia para el challenge
 A continuación encontrarás un video con una introducción sobre cómo encarar el desarrollo de este primer desafío:
+
+
+PAGINA EJEMPLO
+![images](https://github.com/Barby202022/JAVASCRIPT4/assets/107775367/227a7338-5231-42bf-85be-990137919f73)
