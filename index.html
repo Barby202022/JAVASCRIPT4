@@ -1,76 +1,170 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda en Línea</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Home | Funkoshop</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Carrito</a></li>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a class="navbar__link" href="./index.html"></a>
+                <img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu" >
+                    <a  class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon icon="ion:chevron-down"></iconify-icon></a>
+
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a  class="navbar__link" href="./pagescontact.html/">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a  class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a  class="navbar__cart" href="./pages/cart.html">
+                        <img src="./img/icons/cart-icon.svg" alt="Icono de Carrito">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
+    <main class="main-container">
+            <section class="hero">
+            <article class="hero__content container">
+                <h3 class="hero__title">Nuevos Ingresos</h3>
+                <p class="hero__text"> Descubrí el próximo Funko Pop de tu colección</p>
+                <a  class="hero__link" href="./pages/shop.html">SHOP</a>
+            </article>
+         </section>
     
-    <section id="inicio">
-        <h1>Bienvenido a Nuestra Tienda en Línea</h1>
-        <p>Explora nuestros productos y encuentra las mejores ofertas.</p>
-        <a href="#tienda">Ver la tienda</a>
-    </section>
-    
-    <section id="tienda">
-        <h2>Productos Disponibles</h2>
-        <div class="producto">
-            <img src="producto1.jpg" alt="Producto 1">
-            <h3>Producto 1</h3>
-            <p>Precio: $50</p>
-            <a href="#item1">Ver detalles</a>
-        </div>
-        <div class="producto">
-            <img src="producto2.jpg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p>Precio: $75</p>
-            <a href="#item2">Ver detalles</a>
-        </div>
-        <!-- Más productos... -->
-    </section>
-    
-    <section id="item1">
-        <h2>Detalles del Producto 1</h2>
-        <img src="producto1.jpg" alt="Producto 1">
-        <h3>Producto 1</h3>
-        <p>Precio: $50</p>
-        <p>Descripción detallada del producto.</p>
-        <button>Agregar al Carrito</button>
-    </section>
-    
-    <section id="item2">
-        <h2>Detalles del Producto 2</h2>
-        <img src="producto2.jpg" alt="Producto 2">
-        <h3>Producto 2</h3>
-        <p>Precio: $75</p>
-        <p>Descripción detallada del producto.</p>
-        <button>Agregar al Carrito</button>
-    </section>
-    
-    <section id="carrito">
-        <h2>Carrito de Compras</h2>
-        <ul>
-            <li>Producto 1 - $50</li>
-            <li>Producto 2 - $75</li>
-        </ul>
-        <p>Total: $125</p>
-        <button>Realizar Pedido</button>
-    </section>
-    
-    <footer>
-        <p>Derechos de autor © 2023 | Tienda en Línea</p>
+         <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">Star Wars & The Mandalorian </h3>
+                <p class="collection__text">Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                <a  class="collection__link" href="./pages/shop">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="./img/star-wars/baby-yoda-1.webp"
+                    alt="Figura collecionable Funko de Grogu de la serie The Mandolorian">
+            </picture>
+            </section>
+            <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">POKEMON INDIGO</h3>
+                <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                <a   class="collection__link"  href="./pages/shop">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="./img/pokemon/vulpix-1.webp" alt="Figura collecionable Funko de Vulpix de la serie Pokemon">
+            </picture>
+            </section>
+         <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">HARRY POTTER</h3>
+                <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto.</p>
+                <a  class="collection__link" href="./pages/shop">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="./img/harry-potter/snape-patronus-1.webp"
+                    alt="Figura collecionable Funko de patronus de Snape en la peicula de Harry Potter">
+            </picture>
+            </section>
+            <section class="slider container">
+            <h2 class="slider__title">últimos lazamientos</h2>
+            <ul class="slider__items">
+                <li class="slider__item">
+                    <article  class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="./img/star-wars/trooper-1.webp"alt="Figura coleccionable Funko de un StormTrooper">
+                                <img class="card-item__img--back" src="./img/star-wars/trooper-box.webp" alt="Figura coleccionable Funko de un StormTrooper en caja">
+                            </picture>
+
+                            <div class="card-item__content">
+                                <p class="card-item__licence">STAR WARS</p>
+                                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                                <p class="card-item__price">$1799,99</p>
+                                <p class=" card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeptto">
+                                <img class="card-item__img--back" src="./img/pokemon/pidgeotto-box.webp" alt="Figura coleccionable Funko de Pidgeptto en caja">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">POKEMON</p>
+                                <h4 class="card-item__name">PIDGEOTTO</h4>
+                                <p class="card-item__price">$1799,99</p>
+                                <p class=" card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="./img/harry-potter/luna-1.webp"alt="Figura coleccionable Funko de Luna Lovegood">
+                                <img class="card-item__img--back" src="./img/harry-potter/luna-box.webp" alt="Figura coleccionable Funko de Luna Lovegood en caja">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">HARRY POTTER</p>
+                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                <p class="card-item__price">$1799,99</p>
+                                <p class=" card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                    </article>
+                </li>
+            </ul>
+            </section>
+    </main>
+    <footer class="footer">
+         <nav class="navbar container"> 
+             <ul class="navbar__item"> 
+                <li class="navbar__item">
+                 <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                 <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                 <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                 <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+             </ul>
+             <picture>
+             <img src="/img/branding/isotype.svg" alt="Isotipo de la Marca Funkoshop">
+             </picture>
+         </nav>
+         <p class="footer__copy"> All rights reserved 2023 - Funkoshop &copy; </p>
     </footer>
+    
+     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
+
 </html>
