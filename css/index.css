@@ -351,18 +351,47 @@ display: block;
 /*FOOTER*/
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--dark-bg-solid);
-    padding:var(--spacing-68);
-    justify-content: space-between; /* Alineación horizontal */
-    align-items: flex-end;
+    padding: var(--spacing-68);
+    flex-wrap: wrap; /* Agregamos wrap para manejar en varias líneas en caso necesario */
+}
 
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item {
+    list-style: none;
+    margin-right: var(--spacing-24);
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permite que este contenido crezca para empujar el logo a la derecha */
+}
+
+.footer__logo {
+    margin-left: auto; /* Empuja el logo hacia la derecha */
+}
+
+.footer__logo img {
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
 }
 
 .footer__copy {
-    margin-top:  var(--spacing-36);
     text-align: center;
-    margin: 0;
+    width: 100%;
+    margin-top: var(--spacing-36);
 }
+
+
+
 
 /*ANIMATIONS*/
 @keyframes fade{
